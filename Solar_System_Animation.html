@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Solar System</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+      background-color: black;
+    }
+    .sun {
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      width: 60px;
+      height: 60px;
+      background-color: rgb(243, 243, 62);
+      border-radius: 70px;
+      box-shadow: 0 0 30px 15px rgba(255, 223, 0, 0.6);
+      animation: mr 30s ease-out infinite;
+    }
+
+    .orbit {
+      border: 0.5px solid white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      position: relative;
+    }
+
+    .orbit1 {
+      width: 100px;
+      height: 100px;
+    }
+
+    .orbit2 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .orbit3 {
+      width: 300px;
+      height: 300px;
+
+    }
+    .orbit4 {
+      width: 400px;
+      height: 400px;
+
+    }
+    .orbit5 {
+      width: 500px;
+      height: 500px;
+
+    }
+    .orbit6 {
+      width: 600px;
+      height: 600px;
+
+    }
+    .orbit7 {
+      width: 700px;
+      height: 700px;
+
+    }
+    .orbit8 {
+      width: 800px;
+      height: 800px;
+
+    }
+    .MoonOrbit{
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .planet {
+        top: 397px;
+        left: 661px;
+        text-align: center;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        position: absolute;
+    }
+
+    .planet1 {
+      /* top: 310px;
+      left: 665px; */
+      width: 20px;
+      height: 20px;
+     
+      background-color: #B4B4B4;
+      animation: rotate1 3s linear infinite;
+    }
+
+    .planet2 {
+      /* top: 310px;
+      left: 665px; */
+      width: 27px;
+      height: 27px;
+      background-color: #E5C17D;
+      animation: rotate2 7s linear infinite;
+
+    }
+
+    .planet3 {
+      width: 36px;
+      height: 36px;
+      background-color: #2E6B8B;
+      animation: rotate3 10s linear infinite;
+
+    }
+    .planet4 {
+      width: 30px;
+      height: 30px;
+      background-color:#D14F2F;
+      animation: rotate4 15s linear infinite;
+
+    }
+    .planet5 {
+      width: 45px;
+      height: 45px;
+      background-color: #D1B29A;
+      animation: rotate5 30s linear infinite;
+
+    }
+    .planet6 {
+      width: 41px;
+      height: 41px;
+      background-color: #C0A080;
+      animation: rotate6 60s linear infinite;
+
+    }
+    .planet7 {
+      width: 39px;
+      height: 39px;
+      background-color: #71C4D8;
+      animation: rotate7 90s linear infinite;
+
+    }
+    .planet8 {
+      width: 39px;
+      height: 39px;
+      background-color: #4F6A91;
+      animation: rotate8 165s linear infinite;
+
+    }
+    .moon{
+        top: 350px;
+        left: 450px;
+        width: 15px;
+        height: 15px;
+        box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.3);
+        border: 0.5px solid white;
+        border-radius: 50px;
+        background-color: #f1ecc6;
+        animation: MoonRotate 5s linear infinite, moonshadow 30s infinite;
+    }
+    @keyframes mr{
+        0% {
+        box-shadow: 0 0 50px 25px rgba(255, 223, 0, 1);
+      }
+      60% {
+        box-shadow: 0 0 500px 300px rgba(255, 223, 0, 0.1);
+      }
+      100%{
+        box-shadow: 0 0 500px 300px rgba(255, 223, 0, 0);
+      }
+    }
+       @keyframes moonshadow{
+
+          0% {
+            box-shadow: 0 0 15px 10px rgb(223, 212, 212, 0);   
+        }
+        60%{
+            box-shadow: 0 0 30px 20px rgb(223, 212, 212, 0.3);
+        }
+        100%{
+            box-shadow: 0 0 50px 40px rgba(221, 203, 203, 1);
+
+        }
+        }
+    @keyframes MoonRotate {
+      0% {
+      transform: rotate(0deg) translateX(20px) rotate(0deg);
+      }
+
+    100% {
+      transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
+      
+    }
+
+    @keyframes rotate1 {
+      0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+      }
+    }
+    @keyframes rotate2 {
+      0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate3 {
+      0% {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate4 {
+      0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate5 {
+      0% {
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate6 {
+      0% {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate7 {
+      0% {
+        transform: rotate(0deg) translateX(350px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(350px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate8 {
+      0% {
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(400px) rotate(-360deg);
+      }
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="planet planet1">Mercury</div>
+  <div class="planet planet2">Venus</div>
+  <div class="planet planet3">Earth
+    <div class="moon">Moon</div>
+  </div>
+  <div class="planet planet4">Mars</div>
+  <div class="planet planet5">Jupiter</div>
+  <div class="planet planet6">Saturn</div>
+  <div class="planet planet7">Uranus</div>
+  <div class="planet planet8">Neptune</div>
+  <div class="orbit orbit8">
+    <div class="orbit orbit7">
+      <div class="orbit orbit6">
+        <div class="orbit orbit5">
+          <div class="orbit orbit4">
+            <div class="orbit orbit3">
+              <div class="orbit orbit2">
+                <div class="orbit orbit1">
+                  <div class="sun">Sun</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>
